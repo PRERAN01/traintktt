@@ -1,0 +1,224 @@
+.indrail span img {
+    height: 250px;
+
+}
+.irctc span img {
+    height: 250px;
+}
+.con1{
+  
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.box1{
+   
+    
+    height: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: -200px;
+}
+#greet{
+    font-size: 150px;
+}
+.ghr {
+    transform: translateY(-1000px);
+}
+
+.ghr{
+    margin-left: 200px;
+
+    position: relative;
+    display: flex;
+    height: 20%;
+    width: 30%;
+    background-color: white;
+    border-radius: 100px;
+    align-items: center;
+   
+    
+}
+#name{
+    height: 100px;
+    width: 25%;
+    font-size: 50px;
+   
+}
+#submit{
+   
+    width: 10%;
+    font-size: 85px;
+    padding: 50px;
+    border: none;    
+    background-color:#f5f5f6;
+   
+}
+#gap{
+    margin-left: 15px;
+}
+
+
+.iii{
+    background:linear-gradient(to right,white,grey);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+}
+
+.a1 img{
+    height: 50%;
+    background-size: contain;
+    width: 100%;
+}
+#Holiday{
+ 
+    text-transform: uppercase;
+    margin-top: -340px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    background:linear-gradient(to right,white,grey);
+}
+.a1{
+    font-size: 70px;
+    height: 2000px;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color:white;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+input::placeholder{
+   margin-top: 5px;
+    font-size: 85px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+#home,#ticket,#trains,#help,#profile{
+    display: none;
+  
+}
+.home:hover #home{
+    display:flex;
+    height: 50%;
+    
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.train:hover #trains{
+    display:flex;
+    
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.ticket:hover #ticket{
+    display:flex;
+
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.help:hover #help{
+    display:flex;
+    
+    height: 90%;
+    width: 70%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.profile:hover #profile{
+    display:flex;
+    
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227); 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+   
+}
+#zz:hover{
+    transform: scale(1.2) rotate(360deg)  ;
+    transition: all 3s ease-in-out;   
+}
+
+
+
+.home,.ticket,.train,.help,.profile,.pay{
+    height: 200px;
+   
+    font-size: 100px;
+    width: 20%;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.img img{
+    height: 1600px;
+    width: 100%;
+}
+.f1{
+    margin-top: 300px;
+    font-size: 170px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, red, blue);
+
+    
+}
+#connect{
+    font-size: 100px;
+}
+#irct,#how,#wall,#neww,#he{
+    display: flex;
+    flex-direction: column;
+}
+#hh{
+    font-weight: bolder;
+    font-size: 120px;
+    margin: 50px 50px 50px 0;
+}
+.f2{
+    background: linear-gradient(to right, red, blue);
+    font-size: 100px;
+    display: flex;
+    height:1000px;
+    width: 100%;
+    background-color: cadetblue;
+    justify-content: space-around;
+    text-transform: capitalize;
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.box{
+    height: 60vh;
+    width: 60%;
+    background-color: bisque;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}

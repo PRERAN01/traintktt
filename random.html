@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Falling Objects</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Prevent scrollbars */
+      background-color: #000; /* Background color */
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="fallingCanvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById("fallingCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Object class for falling circles
+    class Circle {
+      constructor(x, y, radius, speed) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.speed = speed;
+        this.color = `hsl(${Math.random() * 360}, 80%, 50%)`;
+      }
+
+      // Draw the circle
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
+      }
+
+      // Update position
+      update() {
+        this.y += this.speed; // Move downwards
+        if (this.y - this.radius > canvas.height) {
+          this.y = 0 - this.radius; // Reset position at top
+          this.x = Math.random() * canvas.width; // Randomize X position
+        }
+        this.draw();
+      }
+    }
+
+    // Array to store circles
+    const circles = [];
+    for (let i = 0; i < 50; i++) {
+      let radius = Math.random() * 10 + 5;
+      let x = Math.random() * canvas.width;
+      let y = Math.random() * canvas.height;
+      let speed = Math.random() * 3 + 1; // Falling speed
+      circles.push(new Circle(x, y, radius, speed));
+    }
+
+    // Animation loop
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+      circles.forEach(circle => circle.update());
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    // Resize canvas on window resize
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+#heading{
+    font-weight: 800;
+    font-size: larger;
+}
+h1{
+    font-size: 100px;
+}
+
+.trainssss{
+    height:700px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+#count{
+    font-size: 80px;
+    position: relative;
+    left: -5px;
+    top: -5px;
+    color: white;
+    background-color:red;
+    border-radius: 15px;
+    width: 8px;
+    height: 5px;
+}
+
+.m1,.m2,.m3,.m4{
+    height: 450px;
+    width: 1200px;
+    background-color: royalblue;
+    display: flex;
+    font-size: 50px;
+    border-radius:25px;
+}
+.c1,.c2,.c3,.c4{
+  
+    height: 450px;
+    width: 1200px;
+    border-radius:25px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.t1,.t2,.t3,.t4{
+    border-radius:25px;
+    height: 450px;
+    width: 1200px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.h1,.h2,.h3,.h4{
+    border-radius:25px;
+    height: 450px;
+    width: 1200px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.help{
+    font-size: 80px;
+}
+input{
+    padding: 50px;
+    border: none;
+    background-color:#f5f5f6;
+}
+#add{
+    padding: 50px;
+    border: none;    
+    background-color:#f5f5f6;
+}
+.one{
+    height: 200px;
+    width: 20%;
+    background-image: url("https://th.bing.com/th/id/OIP.qTIcpWVh9PCzB-RmF9h9ywHaFj?w=225&h=180&c=7&r=0&o=5&pid=1.7");
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+.two{
+    height:100%;
+    width: 50%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.three{
+    height:100%;
+    width: 30%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius:25px;
+    
+}
+#book{
+    border-radius: 25px;
+    height: 100px;
+    width: 220px;
+    font-size: 80px;
+}
+.mysore{
+    
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+    margin: 10px;
+}
+.chennai{
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 10px;
+    justify-content: space-around;
+}
+#nnn,#aaa,#ggg,#ddd{
+    font-size: 100px;
+}
+#nump{
+    background-color: white;
+    border: none;
+}
+.trivandrum{
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}
+#nump{
+    font-size: 100px;
+}
+
+.hydrabad{
+    color: white;
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#book{
+    background-color:white;
+}
+#input{
+  margin-top:20px;
+  height: 100px;
+  width: 30%;
+  font-size: 100px;
+}
+
+#date{
+    margin-top:20px;
+    height: 100px;
+    width: 30%;
+    font-size: 100px;
+}
+#add{
+    margin-top:20px;
+    height: 200px;
+    width: 10%;
+    font-size: 100px;
+}
+#gen{
+    margin-top:20px;
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+#age{ margin-top:20px;
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+#dell{
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+.train-details {
+
+    height: 1100px;
+    width: 20%;
+
+    margin-top: 1800px;
+}

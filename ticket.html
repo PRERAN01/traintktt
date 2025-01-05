@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="ticket.css">
+    <script src="https://kit.fontawesome.com/9d9456d370.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="con1">
+        <div class="indrail"><span><img id="a" src="https://i.pinimg.com/originals/6a/72/4b/6a724b9501764fd83a4abcd37b58144d.png" alt=""></span></div>
+        <div class="irctc"><span><img  id="b"src="https://logos-world.net/wp-content/uploads/2020/11/IRCTC-Symbol.png" alt=""></span></div>
+        <div class="box1"><div class="home"onclick="home()" ><div><i class="fa-solid fa-house"></i>
+            </div><span>home</span></div>
+            <div class="ticket"><div><i class="fa-solid fa-ticket"></i>
+                <span id="count"></span></div><span>ticket</span></div>
+            <div class="train"><div><i class="fa-solid fa-train"></i></div><span>trains</span></div>
+            <div class="pay" onclick="gotopayment()"><div><i class="fa-regular fa-credit-card"></i></div><span>pay</span></div>
+            <div class="help"><div><i class="fa-solid fa-headphones-simple"></i></div><span>help and support</span></div>
+            <div class="profile"><div><i class="fa-solid fa-user"></i></div><span>profile</span></div>
+        </div>
+    </div>
+    <hr>
+    <input type="text" id="input" placeholder="enter the name of passenger">
+    <input type="date" id="date">
+    <input type="text" name="" id="gen" placeholder="enter gender">
+    <input type="text" name="" id="age" placeholder="enter age">
+
+    <button id="add" onclick="additem(); nump()">add</button>
+    <h1 id="display"></h1>
+
+
+    <div class="trainssss">
+        <h1>TRAINS FOR MYSORE</h1>
+        <div class="mysore">
+            <div class="m1">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">MYS VANDEBHARAT (20664)</div>
+                    <div class="time">TIME:10 A.MA.M TO 12 P.M  PM</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: MYSORE</div>
+                </div>
+                <div class="three">                 
+                    <button id="book" onclick="inc1()">Book</button>                  
+                </div>
+            </div>
+            <div class="m2">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">RAJYA RANI EXP (20660)</div>
+                    <div class="time">TIME:11.30 A.M AM TO 2 P.M PM</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: MYSORE</div>
+                </div>
+                <div class="three">           
+                    <button id="book" onclick="inc1()">Book</button>                   
+                </div>
+            </div>
+            <div class="m3">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">WODEYAR EXPRESS (12614)</div>
+                    <div class="time">TIME:3.15 P.M TO 5.45 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: MYSORE</div>
+                </div>
+                <div class="three">           
+                    <button id="book" onclick="inc1()">Book</button>                    
+                </div>
+            </div>
+            <div class="m4">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KAVERI EXPRESS (16021)</div>
+                    <div class="time">TIME:4 P.M AM TO 6.40 P.M </div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: MYSORE</div>
+                </div>
+                <div class="three">                  
+                    <button id="book" onclick="inc1()">Book</button>                 
+                </div>
+            </div>
+        </div>
+    
+        <h1>TRAINS FOR CHENNAI</h1>
+        <div class="chennai">
+            <div class="c1"><div class="one"></div>
+            <div class="two">
+                <div class="name">MAS VANDEBHARAT (20608)</div>
+                <div class="time">TIME:10 A.M  TO 12 P.M</div>
+                <div class="from">FROM: BENGALURU</div>
+                <div class="to">TO: CHENNAI CTL</div>
+            </div>
+            <div class="three">                
+                <button id="book" onclick="inc2()">Book</button>          
+            </div></div>
+            <div class="c2">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">SANGHAMITRA EXP (12295)</div>
+                    <div class="time">TIME:11.30 A.M TO  2 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to" >TO: CHENNAI CTL</div>
+                </div>
+                <div class="three">                    
+                    <button id="book" onclick="inc2()">Book</button>                   
+                </div>
+            </div>
+            <div class="c3">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">LALBAGH SF EXP (12608)</div>
+                    <div class="time">TIME:3.15 P.M TO 5.45 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: CHENNAI CTL</div>
+                </div>
+                <div class="three">         
+                    <button id="book" onclick="inc2()">Book</button>             
+                </div>
+            </div>
+            <div class="c4">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">CHENNAI EXPRESS (12610)</div>
+                    <div class="time">TIME:4 P.M TO 6.40 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: CHENNAI CTL</div>
+                </div>
+                <div class="three">              
+                    <button id="book" onclick="inc2()">Book</button>                   
+                </div>
+            </div>
+        </div>
+    
+        <h1>TRAINS FOR TRIVANDRUM</h1>
+        <div class="trivandrum">
+            <div class="t1">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KANYAKUMARI EXP (16526)</div>
+                    <div class="time">TIME:10 A.M AM TO 12 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO:TRIVANDRUM CNTL</div>
+                </div>
+                <div class="three">                    
+                    <button id="book" onclick="inc3()">Book</button>                   
+                </div>
+            </div>
+            <div class="t2">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">.YPR KCVL AC EXP (22677)</div>
+                    <div class="time">TIME:11.30 A.M TO 2 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: TRIVANDRUM CNTL</div>
+                </div>
+                <div class="three">           
+                    <button id="book" onclick="inc3()">Book</button>                 
+                </div>
+            </div>
+            <div class="t3">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KCVL GARIBRATH (12257)</div>
+                    <div class="time">TIME:3.15 P.M  TO 5.45 P.M </div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to" >TO: TRIVANDRUM CNTL</div>
+                </div>
+                <div class="three">                    
+                    <button id="book" onclick="inc3()">Book</button>                   
+                </div>
+            </div>
+            <div class="t4">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KOCHUVELI EXP (16315)</div>
+                    <div class="time">TIME:4 P.M  TO 6.40 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO:TRIVANDRUM CNTL</div>
+                </div>
+                <div class="three">               
+                    <button id="book" onclick="inc3();
+                    ">Book</button>                    
+                </div>
+            </div>
+        </div>
+    
+        <h1>TRAINS FOR HYDERABAD</h1>
+        <div class="hydrabad">
+            <div class="h1">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KCG VANDE BHARAT (20704)</div>
+                    <div class="time">TIME:10 A.M  TO 12 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO: HYDERABAD DECAN</div>
+                </div>
+                <div class="three">                  
+                    <button id="book"onclick="inc()">Book</button>                    
+                </div>
+            </div>
+            <div class="h2">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">YPR GKP EXP (15024)</div>
+                    <div class="time">TIME:11.30 A.M  TO 2 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO:HYDERABAD DECAN</div>
+                </div>
+                <div class="three">                  
+                    <button id="book" onclick="inc()">Book</button>                    
+                </div>
+            </div>
+            <div class="h3">
+                <div class="one"></div>
+                <div class="two">
+                    <div class="name">KACHEGUDA EXP (12786)</div>
+                    <div class="time">TIME:3.15 P.M TO 5.45 P.M</div>
+                    <div class="from">FROM: BENGALURU</div>
+                    <div class="to">TO:HYDERABAD DECAN</div>
+                </div>
+                <div class="three">       
+                    <button id="book" onclick="inc()">Book</button>                  
+                </div>
+            </div>
+            <div class="h4"><div class="one"></div>
+            <div class="two">
+                <div class="name">SC GARIB RATH (12736)</div>
+                <div class="time">TIME: 4 P.M (SBC)  TO 6.40 P.M </div>
+                <div class="from">FROM: BENGALURU</div>
+                <div class="to" >TO: HYDERABAD DECAN</div>
+            </div>
+            <div class="three">              
+                <button id="book" onclick="inc()">Book</button>               
+            </div></div>
+        </div>
+    </div>
+    <button id="nump" onclick="nump()">click to view the number of passengers</button>
+    <div class="train-details">
+        <h1 id="trainname"></h1>
+        <h1 id="time"></h1>
+        <h1 id="from"></h1>
+        <h1 id="to"></h1>
+        <h1 id="payyy"></h1>
+    </div>
+    
+    <div class="f1">
+        <span id="connect">get connected with us on social network</span>
+        <span>
+          <span ><i class="fa-brands fa-facebook"></i></span>
+         <span><i class="fa-brands fa-youtube"></i></span>
+         <span><i class="fa-brands fa-instagram"></i></span>
+         <span><i class="fa-brands fa-facebook-messenger"></i></span>
+         <span><i class="fa-brands fa-twitter"></i></span>
+        </span>
+      </div>
+      <div class="f2">
+        <div id="irct">
+          <span id="hh">irctc trains</span>
+          <span>general information</span>
+          <span>important information</span>
+          <span>agents</span>
+          <span>enquries</span>
+        </div>
+        <div id="how">
+          <span id="hh">how to</span>
+          <span>irctc offical app</span>
+          <span>advertise with us</span>
+          <span>refund rules</span>
+          <span>person with disablity</span>
+        </div>
+        <div id="wall">
+          <span  id="hh">irctc ewallet</span>
+          <span>avail loyalty benifits</span>
+          <span>irctc-ipay payment gateway</span>
+          <span>irctc zone</span>
+          <span>dmrc ticket booking at irctc</span>
+        </div>
+        <div id="neww">
+          <span  id="hh">for newly migrated</span>
+          <span>mobile zone</span>
+          <span>policies</span>
+          <span>ask disha chatbot</span>
+          <span>about us</span>
+        </div>
+        <div id="he">
+          <span  id="hh">help & support</span>
+        </div>
+      </div>
+
+      
+    
+    
+
+
+ <script src="ticket.js">
+ </script>
+
+</body>
+</html>

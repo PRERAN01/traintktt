@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/9d9456d370.js" crossorigin="anonymous"></script>
+    <link rel="icon"  href="WhatsApp Image 2025-01-03 at 21.17.04_5f309460.jpg">
+</head>
+<body>
+    <div class="box">
+        <div class="con">
+            <div class="b1">
+                <h1 id="login">Login</h1>
+                <div class="logoo">
+                    <i class="fa-brands fa-facebook" id="facebook" style="font-size: 100px;
+                    color: rgb(59, 59, 241);"></i>
+                    <i class="fa-brands fa-google" id="google" style="font-size: 100px;
+                    color: red;"></i>
+                    <i class="fa-brands fa-linkedin" id="linkdin" style="font-size: 100px;
+                    color: rgb(40, 43, 239);"></i>
+
+                </div>
+                <div class="con1">
+                    <input type="text" id="input" placeholder="username" required>
+                    <input type="password" id="input" placeholder="password" required>
+                    <div class="abc"><input type="checkbox" id="checkbox">Remember</div>
+                </div>
+              
+                <div class="but">
+                    <button id="submit" onclick="getlink()">Submit</button>
+                </div>
+            </div>       
+            <div class="b2"></div>  
+        </div>
+    </div> 
+
+    <script>
+        // Adjust zoom level when the page loads
+     
+
+        function getlink() {
+            // Open the link in a new tab
+            window.open("http://127.0.0.1:5500/home.html", "_blank");
+        }
+    </script>   
+</body>
+</html>

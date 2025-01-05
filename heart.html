@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emoji falling</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        @keyframes fall{
+            to {transform: translateY(100vh); opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        setInterval(() =>{
+            const emoji = document.createElement("div");
+            emoji.innerText ="❤";
+            emoji.style.cssText =`
+            position: fixed; left: ${ath.random() * 100}%; top: -10px;
+            font-size:30px; animation: fall 3s linear;
+            color:red;
+             `;
+
+             document.body.appendChild(emoji);
+             setTimeout(() => emoji.remove(), 3000);
+        }, 200)
+    </script>
+</body>
+</html>

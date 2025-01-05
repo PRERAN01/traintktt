@@ -1,0 +1,134 @@
+.box{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to top left,black,darkred);
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login{
+    font-size: 5vh;
+    margin-left: 100px;
+}
+.but{width: 60%;
+    height: 10%;
+    
+  
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    transform: scale(1.2);
+}
+#submit{
+    height: 3vh;
+    width: 12vb;
+    font-size: 2vh;
+    border:2px solis black;
+    border-radius: 50px;
+    background-color:white;
+
+    float: right;
+}
+#checkbox{
+    margin-left: 100px;
+    height: 2vh;
+    width: 2vb;
+}
+#input{
+    width: 100%;
+    font-size: 50px;
+    height: 10vb;
+    border-radius: 10px;   
+    background: transparent;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    padding: 10px;
+   
+    
+    
+
+}
+.logoo{
+    
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.abc{
+    font-size: 2vh;
+    display: flex;
+    width: 90%;
+    height: 10%;
+    float: left;
+    
+}
+input::placeholder {
+    font-size: 70px; 
+    color: gray; 
+    font-style: italic; 
+}
+.con1{
+    height:20%;
+    width: 100%;    
+    
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.b1{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height:95% ;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.b2{
+    
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/047/585/374/non_2x/cute-ai-robot-chatbot-thumbs-up-isolated-on-transparent-background-free-png.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:0 50px 50px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100% ;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+
+.con{
+    box-shadow: 20px 20px 10px white;
+    height: 40%;
+    width: 30%;
+    
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

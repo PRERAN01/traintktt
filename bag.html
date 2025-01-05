@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9d9456d370.js" crossorigin="anonymous"></script>
+    <style>
+
+        #count{
+            font-size: 10px;
+            position: relative;
+            left: -5px;
+            top: -5px;
+            color: white;
+            background-color:red;
+            border-radius: 15px;
+            width: 8px;
+            height: 5px;
+        }
+    </style>
+</head>
+<body>
+
+        <i class="fa-solid fa-bag-shopping"></i>
+    <span id="count"></span>
+    <button id="add" onclick="inc()">add</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <script>
+        
+let count = 0;
+
+document.addEventListener("DOMContentLoaded", () => {    
+    let abc = localStorage.getItem("times");
+    if (abc === null) {
+        count = 0; 
+        localStorage.setItem("times", count);
+    } else {
+        count = parseInt(abc);
+    }
+    let value = document.querySelector("#count");
+    value.innerHTML = count;
+});
+function inc() {
+    count++;
+    localStorage.setItem("times", count);
+    let value = document.querySelector("#count");
+    value.innerHTML = count;
+}
+function reset(){
+    document.querySelector("#count").innerHTML=" ";
+    localStorage.clear();
+    count=" ";
+}
+    </script>
+  
+</body>
+</html>

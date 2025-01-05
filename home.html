@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="ticket.css">
+    <script src="https://kit.fontawesome.com/9d9456d370.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="con1">
+        <div class="indrail"><span><img id="a" src="https://i.pinimg.com/originals/6a/72/4b/6a724b9501764fd83a4abcd37b58144d.png" alt=""></span></div>
+        <div class="irctc"><span><img  id="b"src="https://logos-world.net/wp-content/uploads/2020/11/IRCTC-Symbol.png" alt=""></span></div>
+        <div class="box1"><div class="home"><div><i class="fa-solid fa-house"></i>
+            </div><span id="home" onclick="home()">home</span></div>
+            <div class="ticket"><div><i class="fa-solid fa-ticket"></i></div><span id="ticket">ticket</span></div>
+            <div class="train"onclick="gototrains()"><div><i class="fa-solid fa-train"></i></div><span id="trains">trains</span></div>
+            <div class="help"><div><i class="fa-solid fa-headphones-simple"></i></div><span id="help">help and support</span></div>
+            <div class="profile"><div><i class="fa-solid fa-user"></i></div><span id="profile">profile</span></div>
+        </div>
+    </div>
+    <hr>
+   
+    <div class="img">
+     <img src="https://images.livemint.com/img/2023/02/15/1600x900/Vande_Bharat__1676446328347_1676446328597_1676446328597.jpg" alt="">
+    </div>
+    <div class="ghr">
+      
+      <h1 id="greet"></h1>
+    </div>
+    <h1 id="Holiday">holiday</h1>
+    <div class="iii">
+      
+      <div class="a1">
+        <img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" alt="" id="zz">
+        <span id="gap"><h1>maharaja express</h1>
+          Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World's Leading Luxury train” by World Travel Awards consecutively for last six years.
+        </span>
+      </div>
+      <div class="a1">
+        <img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg" alt=""id="zz">
+        <span id="gap"><h1>Rail Tour Packages</h1>
+          IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.
+        </span>
+      </div>
+      <div class="a1">
+        <img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg" alt="" id="zz">
+        <span id="gap"><h1>Domestic Air Packages</h1>
+          Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC
+        </span>
+      </div>
+      <div class="a1">
+        <img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg" alt="" id="zz">
+        <span id="gap"><h1>International Packages</h1>
+          Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.
+        </span>
+      </div>
+    </div>
+    <div class="f1">
+      <span id="connect">get connected with us on social network</span>
+      <span>
+        <span ><i class="fa-brands fa-facebook"></i></span>
+       <span><i class="fa-brands fa-youtube"></i></span>
+       <span><i class="fa-brands fa-instagram"></i></span>
+       <span><i class="fa-brands fa-facebook-messenger"></i></span>
+       <span><i class="fa-brands fa-twitter"></i></span>
+      </span>
+    </div>
+    <div class="f2">
+      <div id="irct">
+        <span id="hh">irctc trains</span>
+        <span>general information</span>
+        <span>important information</span>
+        <span>agents</span>
+        <span>enquries</span>
+      </div>
+      <div id="how">
+        <span id="hh">how to</span>
+        <span>irctc offical app</span>
+        <span>advertise with us</span>
+        <span>refund rules</span>
+        <span>person with disablity</span>
+      </div>
+      <div id="wall">
+        <span  id="hh">irctc ewallet</span>
+        <span>avail loyalty benifits</span>
+        <span>irctc-ipay payment gateway</span>
+        <span>irctc zone</span>
+        <span>dmrc ticket booking at irctc</span>
+      </div>
+      <div id="neww">
+        <span  id="hh">for newly migrated</span>
+        <span>mobile zone</span>
+        <span>policies</span>
+        <span>ask disha chatbot</span>
+        <span>about us</span>
+      </div>
+      <div id="he">
+        <span  id="hh">help & support</span>
+      </div>
+    </div>
+
+   
+    <script>
+  
+      function greeting() {
+   let date = new Date();
+    let greetingMessage;
+
+    if (date.getHours() >= 6 && date.getHours() < 12) {
+    greetingMessage = "Good morning";
+    } else if (date.getHours() >= 12 && date.getHours() < 18) {
+    greetingMessage = "Good afternoon";
+   } else {
+    greetingMessage = "Good evenging";
+   }
+
+  return greetingMessage;
+  }
+  function submit(){
+    let hide=document.querySelector("#name");
+    let button=document.querySelector("#submit")
+    let abc=document.querySelector("#name").value
+    book(abc);
+    button.addEventListener('click', () => {
+    hide.style.display = 'none';
+  });
+  button.addEventListener('click', () => {
+    button.style.display = 'none';
+  });
+  
+}
+
+function book(name = "titu") {
+
+  const greetElement = document.querySelector("#greet");
+  greetElement.innerHTML = `${greeting()} Please Book Your Tickets`;
+}
+
+
+book();
+
+
+function gototrains(){
+  window.open("http://127.0.0.1:5500/ticket.html", "_blank");
+ 
+}
+
+function home() {
+// Open the link in a new tab
+ window.open("http://127.0.0.1:5500/home.html", "_blank");
+}        
+</script>
+</body>
+</html>

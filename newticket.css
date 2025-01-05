@@ -1,0 +1,330 @@
+.con1{  
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+.box1{
+   
+    
+    height: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: -200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+#home,#ticket,#trains,#help,#profile{
+    display: none;
+  
+}
+.home:hover #home{
+    display:flex;
+    height: 50%;
+    
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.train:hover #trains{
+    display:flex;
+    
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.ticket:hover #ticket{
+    display:flex;
+
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.help:hover #help{
+    display:flex;
+    
+    height: 90%;
+    width: 70%;
+    background-color:rgb(221, 226, 227);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.profile:hover #profile{
+    display:flex;
+    
+    height: 50%;
+    width: 50%;
+    background-color:rgb(221, 226, 227); 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+   
+}
+.indrail span img {
+    height: 250px;
+
+}
+.irctc span img {
+    height: 250px;
+}
+
+.home,.ticket,.train,.help,.profile,.pay{
+    height: 200px;
+   
+    font-size: 100px;
+    width: 20%;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+#input{
+  margin-top:20px;
+  height: 100px;
+  width: 30%;
+  font-size: 100px;
+}
+
+#date{
+    margin-top:20px;
+    height: 100px;
+    width: 30%;
+    font-size: 100px;
+}
+#add{
+    margin-top:20px;
+    height: 200px;
+    width: 10%;
+    font-size: 100px;
+}
+#gen{
+    margin-top:20px;
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+#age{ margin-top:20px;
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+#dell{
+    height: 100px;
+    width: 10%;
+    font-size: 100px;
+}
+input{
+    padding: 50px;
+    border: none;
+    background-color:#f5f5f6;
+}
+#add{
+    padding: 50px;
+    border: none;    
+    background-color:#f5f5f6;
+}
+.one{
+    height: 200px;
+    width: 20%;
+    background-image: url("https://th.bing.com/th/id/OIP.qTIcpWVh9PCzB-RmF9h9ywHaFj?w=225&h=180&c=7&r=0&o=5&pid=1.7");
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+.two{
+    height:100%;
+    width: 50%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.three{
+    height:100%;
+    width: 30%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius:25px;
+    
+}
+.mysore{
+    
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+    margin: 10px;
+}
+.chennai{
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 10px;
+    justify-content: space-around;
+}
+.hydrabad{
+    color: white;
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.trivandrum{
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}
+.m1,.m2,.m3,.m4{
+    height: 450px;
+    width: 1200px;
+    background-color: royalblue;
+    display: flex;
+    font-size: 50px;
+    border-radius:25px;
+}
+.c1,.c2,.c3,.c4{
+  
+    height: 450px;
+    width: 1200px;
+    border-radius:25px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.t1,.t2,.t3,.t4{
+    border-radius:25px;
+    height: 450px;
+    width: 1200px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.h1,.h2,.h3,.h4{
+    border-radius:25px;
+    height: 450px;
+    width: 1200px;
+    font-size: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+#book{
+    background-color: white;
+    border-radius: 25px;
+    height: 100px;
+    width: 220px;
+    font-size: 80px;
+}
+h1{
+    font-size: 100px;
+}
+.f2{
+    background: linear-gradient(to right, red, blue);
+    font-size: 100px;
+    display: flex;
+    height:1000px;
+    width: 100%;
+    background-color: cadetblue;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+.f1{
+    margin-top: 300px;
+    font-size: 170px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, red, blue);    
+}
+#connect{
+    font-size: 100px;
+}
+#irct,#how,#wall,#neww,#he{
+    display: flex;
+    flex-direction: column;
+}
+#hh{
+    font-weight: bolder;
+    font-size: 120px;
+    margin: 50px 50px 50px 0;
+}
+.train-details {
+    height: 1200px;
+    width: 20%;   
+}
+#nump{
+    font-size: 100px;
+}
+#count{
+    font-size: 80px;
+    position: relative;
+    left: -5px;
+    top: -5px;
+    color: white;
+    background-color:red;
+    border-radius: 15px;
+    width: 8px;
+    height: 5px;
+}
+#nump{
+    background-color: white;
+    padding: 25px;
+   
+}
+
+table {
+    width: 90%;         
+    height: 300px;      
+    border-collapse: collapse; 
+    margin: 20px auto;
+}
+table, th, td {
+    font-size: 100px;  
+    border: 2px solid black; 
+}
+th, td {
+    font-size: 100px;  
+    padding: 15px;    
+    text-align: center; 
+}
+tr #naa{
+    width:250px;
+}
+th {
+    background-color: lightgray; 
+    font-size: 100px;             
+}  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentpage.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conn"><div class="box">
+        <div class="b1">
+            <div class="b">  billing address</div>
+            <div  class="a"  >full name</div>
+            <input type="text" class="a" placeholder="enter you name">
+            <div  class="a">  email</div>
+            <input type="text" class="a" placeholder="enter your email">
+            <div  class="a"> address</div>
+            <input type="text" placeholder="enter your address" class="a">
+            <div  class="a"> city</div>
+            <input type="text" placeholder="enter your city" class="a">
+            
+        </div>
+        <div class="b2">
+            <div class="b">payment</div>
+            <div class="c1">
+                <div class="acc">accepted card</div>
+                <img src="https://images.ctfassets.net/gc4s9mi2asix/27iheywutAjlzI1CWL3srg/a8808d4f628b0a5d2bb0cd88b054657a/Accepted-Cards-AU.png" id="card" alt="">
+            </div>
+            <div class="a">credit card number</div>
+            <input type="text"class="a" placeholder="enter card number ">
+            <div class="a">exp month</div>
+            <input type="text" class="a" placeholder="enter month">
+            
+            <button class="c" onclick="openpage()">proceed to checkout</button>
+
+            
+        </div>
+    </div>
+    <div class="qr">
+        <img src="qrcode_bit-bangalore.edu.in-removebg-preview.png" alt="" id="qrr">
+        <span id="scan">Pay here</span>
+    </div>
+    <script>
+        function openpage(){
+            document.querySelector(".box").style.transform = "translateX(-400px)";
+            document.querySelector("#qrr").style.display="block";
+            document.querySelector("#scan").style.display="block";
+
+        }
+    </script>
+</body>
+</html>
